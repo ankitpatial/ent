@@ -10,7 +10,7 @@ import (
 	"golang.org/x/text/language"
 )
 
-// Title is wrapper around cases.Title with language.Und
+// Title is wrapper around cases.Title with language.Und (language undefined)
 // replacement for deprecated func strings.Title
 func Title(t string) string {
 	return cases.Title(language.Und).String(t)
